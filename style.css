@@ -32,7 +32,7 @@ body{
     /* header */
 header{
     height: 180px;
-    width: 95%;
+    width: 100%;
     background-color:#f694c1ff;
     background: rgb(145,203,62);
     background: radial-gradient(circle, rgba(145,203,62,1) 0%, rgba(83,165,72,1) 18%, rgba(76,147,76,1) 100%);
@@ -44,75 +44,75 @@ header{
     color: rgb(54, 58, 49);
     grid-area: header;
 }
-
 .logo{    
     display: flex;
     align-items: center;
     padding: 10px;
-   /*  width: 40%; */
-    margin: 0.5em;
-
-    
+    margin: 0.5em;    
 }
+
 .logo__img{
-    height:4em;
-    width: 4em;
+    height:5em;
+    width: 5em;
     margin: 0.5em;
     margin-left: 10em;
-    display: flex;
-    
+    display: flex;    
 }
-
 .nombreMS{
     margin: 1em;
     padding-left: 0.15em;
     width:fit-content;
     color:rgb(59, 58, 55);
-    font-size: 1.8em;
+    font-size: 3em;
     text-align: center;
     font-family:'Caveat', cursive;
     position: relative;
     }
 
-header .nav{
+nav{
     position: relative;
-    bottom: 10px;
-    left: 5px;
-    right: 10%;
-    display: flex;
-    margin: 10px 70px;
-    ;
-    }
-
-.nav__list__item{
-    position:relative;
-    display: flex;
-    list-style: none;
-    align-items: center;
-    padding: 10px;
-    border-radius: 10px;
+    margin: 50px auto;
+    width: 500px;
+    height: 50px;
+    background-color:#262626ff;
+    border-radius: 8px;
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 rgba (0,0,0,.1);
 }
-
+.nav__list__item{
+    display: flex;
+    }
 .nav_list__enlace{
+    font-size: 15px;
+    text-transform: uppercase;
+    color:white;
     text-decoration: none;
-    color: rgb(94, 99, 121);
-    font-weight: 600;
-    line-height: 2px;
-    letter-spacing: 2px;
+    line-height: 20px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    margin: 15px;
     font-family: 'Comfortaa', cursive;
-    padding: 10px; 
-    margin: 5px;
-    border: solid 2px rgb(59, 58, 55);
-    border-radius: 15px; 
+    }
+.nav_list__enlace:hover {
+    background-color:#91cb3eff;
+    text-align: center; 
+    border-radius: 8px;
+    height: max-content; 
     width: max-content;
+    line-height: 20px;
+    margin: 10px; 
+    padding: 5px;
+    border: solid 2px #91cb3eff; 
 }
 
 main{
     background-color:#262626ff;
     grid-area: main;
     width: 95%;
+    height: 100%;
 }
-
 /* FOOTER */
 .footer{
     height: 100px;
@@ -133,7 +133,6 @@ main{
     
     
 }
-
 .footer__list__enlace{
     text-decoration: none;
     color: rgb(94, 99, 121);
@@ -149,13 +148,10 @@ main{
     width: 4em;
     margin: 1em;
 }
-
 .fondo{
     background-color: rgb(240, 240, 240);
     /* background-image: url(./imagenes/white-painted-wall-texture-background.jpg); */
 }
-
-
 
 /* index carrusel */
 .carrusel__contenedor{
@@ -170,11 +166,10 @@ main{
     width: 80%;
     height: fit-content;
     background-color: #91cb3eff;
-    border: solid 1px #f694c1ff;
+    border: solid 1px  #262626ff;
     margin: 0 10px;
     border-radius: 10px;
 }
-
 /* sobre mi */
 .titulo{
     width: 90%;
@@ -253,7 +248,7 @@ font-family: 'Comfortaa', cursive;
 }
 .textoextra{
     width: 50%;
-    color: #f7c1bbff;
+    color: #262626ff;
 }
 
 /* faq */
@@ -315,6 +310,11 @@ font-family: 'Comfortaa', cursive;
     }
     .titulo{
         background-color: #218893;
+    }
+    nav {
+        padding-right: 10px;
+        width: fit-content;
+        height: fit-content;
     }
     .nav__list__item{
         flex-direction: column;
