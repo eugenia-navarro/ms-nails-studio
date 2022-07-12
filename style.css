@@ -110,7 +110,7 @@ nav{
 main{
     background-color:#262626ff;
     grid-area: main;
-    width: 95%;
+    width: 100%;
     height: 100%;
 }
 /* FOOTER */
@@ -353,6 +353,9 @@ font-family: 'Comfortaa', cursive;
     .itemDeGrid1{
         display: flex;
     }
+    .contenedor2{
+        width: 90%;
+    }
 
 }
 
@@ -391,7 +394,10 @@ font-family: 'Comfortaa', cursive;
     }
     .itemDeGrid1{
         display: none;
-    }   
+    }  
+    .video__youtube{
+        width: 100%;
+    }    
 }
 
 
