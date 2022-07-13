@@ -107,11 +107,10 @@ main{
 }
 /* sobre mi */
 .titulo{
-    width: 90%;
-    background-color: rgb(59, 58, 55);
-    font-family:'Caveat', cursive;
+    width: 100%;
+    background-color: #394053ff;
     font-size: 30px;
-    color: #f2e9dcff;
+    color: #b8f5c9ff;
     padding-left: 10%;
     }
 .contenedor{
@@ -121,7 +120,7 @@ main{
 }
 .contenedor1{
     display: flex;
-    width: 95%;
+    width: 100%;
     height: fit-content;
     flex-wrap: wrap;
     justify-content: center;
@@ -140,23 +139,25 @@ main{
     width: 330px;
     height: 220px;
 }
-.contenedor1 .card h3{
-    font-weight: 600;
+.contenedor1 .card .card-body h3{
+    font-weight: 400;
+    margin: 10px;
+    height: 70px;
+    align-items: center;
+
+
 }
 .contenedor1 .card p{
     padding: 0 1em;
     font-size: 16px;
     font-weight: 300;
-    font-family: 'Comfortaa', cursive;
     letter-spacing: 1px;
     line-height: 20px;
-    text-align: left;
+    text-align: left; 
 }
-.contenedor1 .card a{
-font-weight: 500;
-text-decoration: none;
-color: black;
-font-family: 'Comfortaa', cursive;
+.card-body{
+    color: #394053ff;  
+
 }
 
 
@@ -231,6 +232,9 @@ font-family: 'Comfortaa', cursive;
     padding: 20px;
     height: 350px;
     margin: 15px;
+}
+h2{
+
 }
 
 @media screen and (max-width:768px) {
